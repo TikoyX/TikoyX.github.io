@@ -1,0 +1,50 @@
+:root {
+  --font-size-standard: 16px;
+  --font-size-medium: 2rem;
+  --font-size-large: 2.5rem;
+  --font-size-x-large: 3.5rem;
+
+  --dark-blue: #1F4690;
+  --light-blue: #3A5BA0;
+  --orange: #FFA500;
+  --beige: #FFE5B4;
+}
+
+@font-face {
+  font-family: Emulogic;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Emulogic.woff") format("woff");
+}
+
+h1 {
+  font-size: var(--font-size-x-large);
+}
+
+h2 {
+  font-size: var(--font-size-large);
+}
+
+.section {
+  min-height: calc(100vh - 80px);
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colored-section {
+  background-color: var(--dark-blue);
+}
+
+.welcome-section {
+  padding-top: 50px;
+}
+
+#welcome-text {
+  font-family: Emulogic, serif;
+  font-size: var(--font-size-medium);
+  text-align: center;
+  color: var(--beige)
+}
