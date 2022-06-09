@@ -1,8 +1,10 @@
 :root {
+
   --font-size-standard: 16px;
   --font-size-medium: 2rem;
   --font-size-large: 2.5rem;
   --font-size-x-large: 3.5rem;
+  font-family: Emulogic, serif;
 
   --dark-blue: #1F4690;
   --light-blue: #3A5BA0;
@@ -18,24 +20,34 @@
 }
 
 h1 {
-  font-size: var(--font-size-x-large);
+  font-size: var(--font-size-large);
 }
 
 h2 {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-medium);
 }
 
 .section {
   min-height: calc(100vh - 80px);
   width: 100vw;
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  background-color: var(--beige);
 }
 
 .colored-section {
   background-color: var(--dark-blue);
+}
+
+.beige-header {
+  color: var(--beige)
+}
+
+.blue-header {
+  color: var(--dark-blue)
 }
 
 .welcome-section {
@@ -47,4 +59,14 @@ h2 {
   font-size: var(--font-size-medium);
   text-align: center;
   color: var(--beige)
+}
+
+#pressStart-container {
+  margin: 40px 0 0;
+  text-align: left;
+}
+
+#pressStart-container p {
+  font-size: var(--font-size-medium);
+  color: var(--orange);
 }
