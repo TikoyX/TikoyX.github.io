@@ -1,6 +1,7 @@
 :root {
 
   --font-size-standard: 16px;
+  --font-size-small: 0.8rem;
   --font-size-medium: 2rem;
   --font-size-large: 2.5rem;
   --font-size-x-large: 3.5rem;
@@ -17,6 +18,23 @@
   font-style: normal;
   font-weight: 400;
   src: url("./assets/fonts/Emulogic.woff") format("woff");
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
 
 h1 {
@@ -54,11 +72,11 @@ h2 {
   padding-top: 50px;
 }
 
-#welcome-text {
+.welcome-text {
   font-family: Emulogic, serif;
   font-size: var(--font-size-medium);
   text-align: center;
-  color: var(--beige)
+  color: var(--beige);
 }
 
 #pressStart-container {
@@ -69,4 +87,52 @@ h2 {
 #pressStart-container p {
   font-size: var(--font-size-medium);
   color: var(--orange);
+}
+
+.press-text {
+
+  cursor: pointer;
+}
+
+#hover-text {
+  font-family: Emulogic, serif;
+  font-size: var(--font-size-medium);
+  text-align: center;
+  color: var(--beige);
+}
+
+.hover-text:hover {
+  animation: bounce 1s;
+  transform: skew(-10deg);
+}
+
+#achievement-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.achievement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 10px;
+  border: 5px double var(--dark-blue);
+  min-width: 250px;
+  min-height: 125px;
+}
+
+.achievement-text {
+  font-size: var(--font-size-medium);
+}
+
+.achievement-image {
+  image-rendering: pixelated;
+  margin-right: 10px;
+}
+
+legend {
+  font-size: var(--font-size-small);
 }
