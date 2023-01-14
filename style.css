@@ -1,138 +1,139 @@
 :root {
 
-  --font-size-standard: 16px;
-  --font-size-small: 0.8rem;
-  --font-size-medium: 2rem;
-  --font-size-large: 2.5rem;
-  --font-size-x-large: 3.5rem;
-  font-family: Emulogic, serif;
+    --font-size-standard: 16px;
+    --font-size-small: 0.8rem;
+    --font-size-medium: 2rem;
+    --font-size-large: 2.5rem;
+    --font-size-x-large: 3.5rem;
+    font-family: Emulogic, serif;
 
-  --dark-blue: #1F4690;
-  --light-blue: #3A5BA0;
-  --orange: #FFA500;
-  --beige: #FFE5B4;
+    --dark-blue: #1F4690;
+    --light-blue: #3A5BA0;
+    --orange: #FFA500;
+    --beige: #FFE5B4;
 }
 
 @font-face {
-  font-family: Emulogic;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./assets/fonts/Emulogic.woff") format("woff");
+    font-family: Emulogic;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/Emulogic.woff") format("woff");
 }
 
 @keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
 
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
 }
 
 h1 {
-  font-size: var(--font-size-large);
+    font-size: var(--font-size-large);
+    margin: 0 0 20px;
 }
 
 h2 {
-  font-size: var(--font-size-medium);
+    font-size: var(--font-size-medium);
 }
 
 .section {
-  min-height: calc(100vh - 80px);
-  width: 100vw;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: var(--beige);
+    min-height: calc(100vh - 80px);
+    width: 100vw;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--beige);
 }
 
 .colored-section {
-  background-color: var(--dark-blue);
+    background-color: var(--dark-blue);
 }
 
 .beige-header {
-  color: var(--beige)
+    color: var(--beige)
 }
 
 .blue-header {
-  color: var(--dark-blue)
+    color: var(--dark-blue)
 }
 
 .welcome-section {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 .welcome-text {
-  font-family: Emulogic, serif;
-  font-size: var(--font-size-medium);
-  text-align: center;
-  color: var(--beige);
+    font-family: Emulogic, serif;
+    font-size: var(--font-size-medium);
+    text-align: center;
+    color: var(--beige);
 }
 
 #pressStart-container {
-  margin: 40px 0 0;
-  text-align: left;
+    margin: 40px 0 0;
+    text-align: left;
 }
 
 #pressStart-container p {
-  font-size: var(--font-size-medium);
-  color: var(--orange);
+    font-size: var(--font-size-medium);
+    color: var(--orange);
 }
 
 .press-text {
 
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #hover-text {
-  font-family: Emulogic, serif;
-  font-size: var(--font-size-medium);
-  text-align: center;
-  color: var(--beige);
+    font-family: Emulogic, serif;
+    font-size: var(--font-size-medium);
+    text-align: center;
+    color: var(--beige);
 }
 
 .hover-text:hover {
-  animation: bounce 1s;
-  transform: skew(-10deg);
+    animation: bounce 1s;
+    transform: skew(-10deg);
 }
 
 #achievement-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .achievement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-  padding: 10px;
-  border: 5px double var(--dark-blue);
-  min-width: 250px;
-  min-height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    border: 5px double var(--dark-blue);
+    min-width: 250px;
+    min-height: 125px;
 }
 
 .achievement-text {
-  font-size: var(--font-size-medium);
+    font-size: var(--font-size-medium);
 }
 
 .achievement-image {
-  image-rendering: pixelated;
-  margin-right: 10px;
+    image-rendering: pixelated;
+    margin-right: 10px;
 }
 
 legend {
-  font-size: var(--font-size-small);
+    font-size: var(--font-size-small);
 }
