@@ -1,5 +1,4 @@
 :root {
-
     --font-size-standard: 16px;
     --font-size-small: 0.8rem;
     --font-size-medium: 2rem;
@@ -39,11 +38,12 @@
 
 h1 {
     font-size: var(--font-size-large);
-    margin: 0 0 20px;
+    margin: 0 0 40px;
 }
 
 h2 {
     font-size: var(--font-size-medium);
+    line-height: 1.5;
 }
 
 .section {
@@ -59,6 +59,10 @@ h2 {
 
 .colored-section {
     background-color: var(--dark-blue);
+}
+
+.page-not-found-section {
+    min-height: calc(100vh);
 }
 
 .beige-header {
@@ -113,11 +117,12 @@ h2 {
     transition: color 0.5s ease;
 }
 
-#achievement-container {
+.achievement-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 0 30px;
 }
 
 .achievement {
@@ -152,15 +157,15 @@ legend {
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 #nav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: var(--font-size-standard);
 }
 
 #nav a:hover {
@@ -172,4 +177,46 @@ legend {
 #nav a.active {
     background-color: #04AA6D;
     color: white;
+}
+
+#footer {
+    background-color: #333;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+#footer p {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: var(--font-size-standard);
+}
+
+#some-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#some-links a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: var(--font-size-standard);
+}
+
+#mario {
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
 }
