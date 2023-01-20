@@ -21,17 +21,14 @@
 
 @keyframes bounce {
     0%, 20%, 60%, 100% {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     40% {
-        -webkit-transform: translateY(-20px);
         transform: translateY(-20px);
     }
 
     80% {
-        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
 }
@@ -46,8 +43,15 @@ h2 {
     line-height: 1.5;
 }
 
+p {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    cursor: default;
+}
+
 .section {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 50px);
     width: 100vw;
     padding: 40px 20px;
     display: flex;
@@ -63,10 +67,12 @@ h2 {
 
 .page-not-found-section {
     min-height: calc(100vh);
+    padding: 150px;
 }
 
 .beige-header {
-    color: var(--beige)
+    color: var(--beige);
+    margin: 0 0 40px;
 }
 
 .blue-header {
@@ -94,6 +100,10 @@ h2 {
     color: var(--orange);
 }
 
+#pressStart-container .players {
+    cursor: pointer;
+}
+
 #pressStart-container .players:hover {
     animation: bounce 1s infinite;
     color: var(--beige);
@@ -103,14 +113,12 @@ h2 {
     cursor: pointer;
 }
 
-#hover-text {
-    font-family: Emulogic, serif;
-    font-size: var(--font-size-medium);
-    text-align: center;
-    color: var(--beige);
+/* animate the text when pressed */
+.press-text:active {
+    color: var(--orange);
 }
 
-.hover-text:hover {
+.welcome-text .hover-text:hover {
     animation: bounce 1s;
     transform: skew(-10deg);
     color: var(--orange);
@@ -213,10 +221,42 @@ legend {
     font-size: var(--font-size-standard);
 }
 
-#mario {
+#some-links a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: background-color 0.5s ease;
+}
 
+.some-link:hover {
+    transform: skew(-10deg);
+    color: var(--orange);
+    transition: color 0.5s ease;
+}
+
+#mario {
     position: absolute;
     bottom: 10px;
     left: 10px;
+    height: 120px;
+}
 
+.lost-button {
+    background-color: var(--dark-blue);
+    border: 5px solid var(--beige);
+    border-radius: 5px;
+    color: var(--beige);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.lost-button:hover {
+    background-color: var(--beige);
+    color: var(--dark-blue);
+    transition: background-color 0.3s ease;
+}
+
+.lost-button a {
+    color: var(--orange);
+    text-decoration: none;
 }
