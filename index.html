@@ -12,13 +12,16 @@
 </head>
 <body>
 <nav id="nav">
-    <a href="#"> Home </a>
-    <a href="#"> Achievements </a>
-    <a href="#"> Projects </a>
-    <a href="#"> About Me </a>
+    <a href="#home">Home</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#projects">Projects</a>
+    <a href="#about-me">About Me</a>
+    <div>
+
+    </div>
 </nav>
 <main>
-    <section class="section colored-section welcome-section">
+    <section id="home" class="section colored-section welcome-section">
         <p class="welcome-text">
             Welcome to my website<br><br>
             Play around, <span class="press-text">press</span> and <span class="hover-text">hover</span> over random
@@ -31,7 +34,7 @@
             <p class="players">2p</p>
         </div>
     </section>
-    <section class="section">
+    <section id="achievements" class="section">
         <h1 class="blue-header">Achievements</h1>
         <h3>Programming Languages</h3>
         <div class="achievement-container">
@@ -46,6 +49,12 @@
                 <img class="achievement-image" src="./assets/images/html_logo.png" height="80" loading="lazy"
                      alt="HTML Logo">
                 <p class="achievement-text">HTML</p>
+            </fieldset>
+            <fieldset class="achievement">
+                <legend>Achievement</legend>
+                <img class="achievement-image" src="./assets/images/html_logo.png" height="80" loading="lazy"
+                     alt="HTML Logo">
+                <p class="achievement-text">CSS</p>
             </fieldset>
             <fieldset class="achievement">
                 <legend>Achievement</legend>
@@ -77,6 +86,12 @@
                      alt="React Logo">
                 <p>React (native)</p>
             </fieldset>
+            <fieldset class="achievement">
+                <legend>Achievement</legend>
+                <img class="achievement-image" src="./assets/images/react_logo.png" width="80" loading="lazy"
+                     alt="React Logo">
+                <p>Arduino</p>
+            </fieldset>
         </div>
         <h3>Tools</h3>
         <div class="achievement-container">
@@ -92,35 +107,52 @@
                      alt="Figma logo">
                 <p>Figma</p>
             </fieldset>
+            <fieldset class="achievement">
+                <legend>Achievement</legend>
+                <img class="achievement-image" src="./assets/images/figma_logo.png" width="80" loading="lazy"
+                     alt="Figma logo">
+                <p>3D Printing</p>
+            </fieldset>
+            <fieldset class="achievement">
+                <legend>Achievement</legend>
+                <img class="achievement-image" src="./assets/images/figma_logo.png" width="80" loading="lazy"
+                     alt="Figma logo">
+                <p>Fusion 360</p>
+            </fieldset>
         </div>
     </section>
-    <section class="section colored-section">
+    <section id="projects" class="section colored-section">
         <h1 class="beige-header">Projects</h1>
         <div>
-            <fieldset>
+            <fieldset class="project">
                 <legend>Bachelor project</legend>
-                <p class="project-text">Developed the schematics and design for a Record player made by 3D printing and
-                    laser cutting.</p>
+                <p class="project-text">Developed the concept and prototype for a platform used for skill assesment
+                    among students.</p>
             </fieldset>
-            <fieldset>
+            <fieldset class="project">
                 <legend>Homemade Record Player</legend>
                 <p class="project-text">Developed the schematics and design for a Record player made by 3D printing and
                     laser cutting.</p>
             </fieldset>
-            <fieldset>
+            <fieldset class="project">
+                <legend>Tietgen Festival</legend>
+                <p class="project-text">Founded and chaired the first year of Tietgen Fesitval in 2015</p>
+            </fieldset>
+            <fieldset class="project">
                 <legend>Tietgen Festival Website</legend>
                 <p class="project-text">Developed the website for Tietgen Festival. Found at <a
                         href="https://tietgenfestival.dk">tietgenfestival.dk</a></p>
             </fieldset>
         </div>
     </section>
-    <section class="section">
+    <section id="about-me" class="section">
         <h1 class="blue-header">About Me</h1>
         <p>
             My name is Theodor<br><br>
             I am currently enrolled in the Masters of Computer Science at the IT University of Copenhagen<br><br>
+            This is with a specialisation in cybersecurity. <br><br>
             I also work as a Frontend developer at <a href="https://ideanote.io" target="_blank"
-                                                      rel="noopener noreferrer">Ideanote</a><br><br>
+                                                      rel="noopener noreferrer">Ideanote</a>.<br><br>
         </p>
     </section>
     <footer id="footer">
