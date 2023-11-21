@@ -85,7 +85,7 @@ p {
 .section {
     min-height: calc(100vh - 50px);
     width: 100%;
-    padding: 40px 10em;
+    padding: 2.5em 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,7 +206,7 @@ legend {
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-    font-size: var(--font-size-standard);
+    font-size: var(--font-size-standard, 16px);
 }
 
 #nav a:hover {
