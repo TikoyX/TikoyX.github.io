@@ -1,0 +1,306 @@
+:root {
+    --font-size-standard: 16px;
+    --font-size-small: 0.8rem;
+    --font-size-smallmedium: 1.5rem;
+    --font-size-medium: 2rem;
+    --font-size-large: 2.5rem;
+    --font-size-x-large: 3.5rem;
+    font-family: Emulogic, serif;
+
+    --dark-blue: #1F4690;
+    --light-blue: #3A5BA0;
+    --orange: #FFA500;
+    --beige: #FFE5B4;
+    --dark-grey: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Emulogic;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/Emulogic.woff") format("woff");
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    margin: 64px 0;
+    background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--dark-grey);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: var(--dark-grey);
+}
+
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    font-size: var(--font-size-large);
+    margin: 0 0 40px;
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+    line-height: 1.5;
+}
+
+p {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    cursor: default;
+}
+
+.section {
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    padding: 2.5em 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--beige);
+    scroll-margin-top: 4em;
+}
+
+.colored-section {
+    background-color: var(--dark-blue);
+}
+
+.page-not-found-section {
+    min-height: calc(100vh);
+    padding: 150px;
+}
+
+.beige-header {
+    color: var(--beige);
+    margin: 0 0 40px;
+}
+
+.blue-header {
+    color: var(--dark-blue);
+}
+
+.welcome-section {
+    padding-top: 150px;
+}
+
+.welcome-text {
+    font-family: Emulogic, serif;
+    font-size: var(--font-size-medium);
+    text-align: center;
+    color: var(--beige);
+}
+
+#pressStart-container {
+    margin: 40px 0 0;
+    text-align: left;
+}
+
+#pressStart-container p {
+    font-size: var(--font-size-medium);
+    color: var(--orange);
+}
+
+#pressStart-container .players {
+    cursor: pointer;
+}
+
+#pressStart-container .players:hover {
+    animation: bounce 1s infinite;
+    color: var(--beige);
+}
+
+.press-text {
+    cursor: pointer;
+}
+
+/* animate the text when pressed */
+.press-text:active {
+    color: var(--orange);
+}
+
+.welcome-text .hover-text:hover {
+    animation: bounce 1s;
+    transform: skew(-10deg);
+    color: var(--orange);
+    transition: color 0.5s ease;
+}
+
+.achievement-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 30px;
+}
+
+.achievement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    border: 5px double var(--dark-blue);
+    min-width: 250px;
+    min-height: 125px;
+}
+
+.achievement-text {
+    font-size: var(--font-size-medium);
+}
+
+.achievement-image {
+    image-rendering: pixelated;
+    margin-right: 10px;
+}
+
+legend {
+    font-size: var(--font-size-small);
+}
+
+#nav {
+    background-color: var(--dark-grey);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+#nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: var(--font-size-standard, 16px);
+}
+
+#nav a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+#nav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#footer {
+    background-color: var(--dark-grey);
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+#footer p {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: var(--font-size-standard);
+}
+
+#some-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#some-links a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: var(--font-size-standard);
+}
+
+#some-links a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+.some-link:hover {
+    transform: skew(-10deg);
+    color: var(--orange);
+    transition: color 0.5s ease;
+}
+
+#mario {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 120px;
+}
+
+.lost-button {
+    background-color: var(--dark-blue);
+    border: 5px solid var(--beige);
+    border-radius: 5px;
+    color: var(--beige);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.lost-button:hover {
+    background-color: var(--beige);
+    color: var(--dark-blue);
+    transition: background-color 0.3s ease;
+}
+
+.lost-button a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.project {
+    background: #87a4fa;
+    margin: 0 0 3em;
+    border: 3px white solid;
+}
+
+.project legend {
+    font-size: var(--font-size-smallmedium);
+    color: white;
+}
