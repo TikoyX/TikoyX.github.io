@@ -100,12 +100,12 @@ p {
 
 .page-not-found-section {
     min-height: calc(100vh);
-    padding: 150px;
+    padding: 150px 0 0;
 }
 
 .beige-header {
     color: var(--beige);
-    margin: 0 0 40px;
+    margin: 0 0 35px;
 }
 
 .blue-header {
@@ -273,6 +273,7 @@ legend {
     height: 120px;
 }
 
+
 .lost-button {
     background-color: var(--dark-blue);
     border: 5px solid var(--beige);
@@ -303,4 +304,18 @@ legend {
 .project legend {
     font-size: var(--font-size-smallmedium);
     color: white;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: var(--font-size-smallmedium);
+    }
+
+    h2 {
+        font-size: var(--font-size-standard);
+    }
+
+    #mario {
+        height: 80px;
+    }
 }
